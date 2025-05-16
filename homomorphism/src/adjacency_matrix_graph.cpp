@@ -70,7 +70,7 @@ std::shared_ptr<AdjacencyMatrixGraph> parseGr(std::ifstream& input) {
 
     size_t u, v;
     while (getline(input, line)) {
-        if (line.empty() || line[0] == 'c') continue;
+        if (line.empty() || line[0] == 'c' || line[0] == 'l') continue;
 
         if (!std::sscanf(line.c_str(), "%zd %zd", &u, &v)) return nullptr;
 
