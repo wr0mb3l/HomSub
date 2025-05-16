@@ -2,6 +2,7 @@
 #define EXPERIMENTS_TEST_RUNNER_H
 
 #include <vector>
+#include <functional>
 
 #include "experiments/test_settings.h"
 #include "experiments/test_logger.h"
